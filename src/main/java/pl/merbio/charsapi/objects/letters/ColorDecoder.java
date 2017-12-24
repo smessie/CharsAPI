@@ -24,7 +24,7 @@ public class ColorDecoder extends DecodeLetter{
         if(m == null){
             DyeColor dc = a(character, cb.getBuilderDataBlock(), bs);
             if(dc != null){
-                cb.setBuilderDataBlock(dc.getData());
+                cb.setBuilderDataBlock(dc.getDyeData());
             }
             else {
                 return false;
@@ -42,7 +42,7 @@ public class ColorDecoder extends DecodeLetter{
 //        Message.broadcast("&7- &a" + c + " &7- &b" + dc.getData() + "&7/&b" + data);
         
         if(c.toString().equalsIgnoreCase("x")){
-            if(dc.getData() == data) {
+            if(dc.getDyeData() == data) {
                 return a(c, data, bs);
             }
         }
