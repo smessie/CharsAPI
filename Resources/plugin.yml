@@ -1,8 +1,0 @@
-name: CharsAPI
-main: pl.merbio.Main
-author: merbio
-version: 0.4.2
-commands:
-    chars:
-        description: Chars command.
-        aliases: [char, ch]
